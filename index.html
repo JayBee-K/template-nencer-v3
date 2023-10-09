@@ -17,33 +17,120 @@
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 	      rel="stylesheet">
 
 	<link rel="icon" href="./assets/images/favicon.png">
 	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
 	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 	<link rel="stylesheet" href="./assets/css/base.css">
 	<link rel="stylesheet" href="./assets/css/style.css">
 
 	<style>
-        :root {
-            --primary-color: #0867AD;
-            --primary-hover: #0b3375;
-            --primary-rgb: 8, 103, 173;
-
-            --secondary-color: #ED3439;
-            --secondary-hover: #c62a2e;
-            --secondary-rgb: 237, 52, 57;
-        }
+		:root {
+			--primary-color: #0867AD;
+			--primary-hover: #0b3375;
+			--primary-rgb: 8, 103, 173;
+			--secondary-color: #ED3439;
+			--secondary-hover: #c62a2e;
+			--secondary-rgb: 237, 52, 57;
+		}
 	</style>
 </head>
 <body>
 
 <div id="header" class="header">
+	<div class="header-top">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-auto">
+					<div class="top-language hstack align-items-center gap-10px">
+						<a href="" aria-label=""
+						   class="language-item is-active hstack align-items-center gap-1 text-white">
+							<img class="img-fluid language-item_img" src="./assets/images/language/vn.png" alt="">
+							<span class="d-inline-block align-middle language-item_text">Vietnamese</span>
+						</a>
+						<a href="" aria-label=""
+						   class="language-item hstack align-items-center gap-1 text-white">
+							<img class="img-fluid language-item_img" src="./assets/images/language/en.png" alt="">
+							<span class="d-inline-block align-middle language-item_text">English</span>
+						</a>
+						<a href="" aria-label=""
+						   class="language-item hstack align-items-center gap-1 text-white">
+							<img class="img-fluid language-item_img" src="./assets/images/language/cn.png" alt="">
+							<span class="d-inline-block align-middle language-item_text">中文</span>
+						</a>
+					</div>
+				</div>
+				<div class="col-auto">
+					<div class="top-bar hstack align-items-center gap-15px">
+						<div class="bar-contact hstack align-items-center gap-15px">
+							<a href="" aria-label="" class="bar-item hstack align-items-center gap-1 text-white">
+								<i class="fas fa-envelope fz-15"></i>
+								<span>Email:</span>support@nencer.com
+							</a>
+							<a href="" aria-label="" class="bar-item hstack align-items-center gap-1 text-white">
+								<i class="fas fa-phone-alt fz-15"></i>
+								<span>Hotline</span>:</span>0969.110.811
+							</a>
+						</div>
+						<div class="bar-user position-relative">
+							<button type="button" aria-label=""
+							        class="bar-user_btn link-default hstack align-items-center gap-2 text-white">
+								<i class="fas fa-user-alt fz-15"></i>
+								Tài khoản
+							</button>
+							<ul class="list-unstyled mb-0 bar-user_list position-absolute end-0 d-none">
+								<li>
+									<a href="" class="user-item hstack align-items-center">
+										Đăng nhập tài khoản
+									</a>
+								</li>
+								<li>
+									<a href="" class="user-item hstack align-items-center">
+										Đăng ký tài khoản
+									</a>
+								</li>
+								<li>
+									<a href="" class="user-item hstack align-items-center">
+										Thông tin tài khoản
+									</a>
+								</li>
+								<li>
+									<a href="" class="user-item hstack align-items-center">
+										Đơn hàng của bạn
+									</a>
+								</li>
+								<li>
+									<a href="" class="user-item hstack align-items-center">
+										Đăng xuất
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-main bg-white">
+		<div class="container">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-auto">
+					<div class="header-logo">
+						<a href="" class="hstack align-items-center" aria-label="">
+							<img src="./assets/images/logo.png" class="img-fluid" alt="">
+						</a>
+					</div>
+				</div>
+				<div class="col-auto">
+					<div class="header-navigation"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div id="main" class="main">
@@ -56,7 +143,6 @@
 <script type="text/javascript"
         src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
 <script type="text/javascript" src="./assets/js/app.js"></script>
 </body>
 </html>

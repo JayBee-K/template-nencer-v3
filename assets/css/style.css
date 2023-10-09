@@ -1,0 +1,39 @@
+.header .header-top {
+	background-color: var(--primary-color);
+}
+
+.header .top-language .language-item {
+	transition: var(--transition-default);
+	padding: 6px 12px;
+	border-radius: 6px;
+}
+
+.header .top-language .language-item .language-item_img {
+	height: 15px;
+}
+
+.header .top-language .language-item .language-item_text {
+	margin-left: .25em;
+}
+
+.header .top-language .language-item.is-active {
+	background-color: rgba(255, 255, 255, .2);
+}
+
+.header .bar-user .bar-user_btn {
+	background: var(--secondary-color);
+	padding: 12px 20px;
+	transition: var(--transition-default);
+}
+
+.header .bar-user:hover .bar-user_btn:hover {
+	background: var(--secondary-hover);
+}
+
+.header .header-main {
+	box-shadow: 0px 0px 33.4221px rgba(130, 89, 9, 0.0575083), 0px 2.5182px 2.21381px rgba(130, 89, 9, 0.0224916);
+}
+
+.header .header-logo img {
+	height: 40px;
+}
