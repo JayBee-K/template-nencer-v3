@@ -21,6 +21,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	gap: 25px;
 }
 
 .header .header-navigation > ul > li {
@@ -29,8 +30,20 @@
 
 .header .header-navigation > ul > li > a {
 	color: var(--bs-black);
-	padding: 24px 18px;
+	padding: 22px 0;
 	font-size: 1.15em;
+	position: relative;
+}
+
+.header .header-navigation > ul > li > a:before {
+	background-color: var(--primary-color);
+	content: "";
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	width: 0;
+	height: 3px;
+	transition: var(--transition-default);
 }
 
 .header .header-navigation > ul > li > a > i {
@@ -38,9 +51,9 @@
 	transition: .3s ease-in transform;
 }
 
-.header .header-navigation > ul > li:hover > a {
-	background-color: var(--primary-color);
-	color: var(--bs-white);
+.header .header-navigation > ul > li:hover > a:before {
+	left: 0;
+	width: 100%;
 }
 
 .header .header-navigation > ul > li:hover > a > i {
@@ -83,6 +96,53 @@
 .header .header-navigation > ul > li > ul > li:hover > a {
 	background-color: var(--primary-color);
 	color: var(--bs-white);
+}
+.header .header-user {
+	margin-left: 25px;
+}
+.header .header-user .header-user_btn {
+	background: rgba(255, 255, 255, .2);
+	padding: 25px 15px;
+	transition: var(--transition-default);
+}
+
+.header .header-user:hover .header-user_btn:hover {
+	color: var(--primary-color);
+}
+
+.header .header-user .header-user_list {
+	background-color: var(--bs-white);
+	min-width: 175px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+	transition: var(--transition-default);
+	border-radius: 0 0 4px 4px;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	top: 100%;
+	left: 15px;
+}
+
+.header .header-user:hover .header-user_list {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+	top: 100%;
+	left: 0;
+}
+
+.header .header-user .header-user_list .user-item {
+	padding: 12px 15px;
+	color: var(--bs-dark);
+}
+
+.header .header-user .header-user_list > li:nth-child(even) .user-item {
+	background-color: #f4f4f4;
+}
+
+.header .header-user .header-user_list .user-item:hover {
+	color: var(--bs-white);
+	background-color: var(--primary-color) !important;
 }
 
 .section-gap {
