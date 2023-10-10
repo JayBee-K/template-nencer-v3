@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Template Nencer</title>
+    <meta name="description" content="Template Nencer">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Template Nencer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Nencer">
+    <meta property="og:image" content="">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <style>
+        :root {
+            --primary-color: #0867AD;
+            --primary-hover: #0b3375;
+            --primary-rgb: 8, 103, 173;
+            --secondary-color: #ED3439;
+            --secondary-hover: #c62a2e;
+            --secondary-rgb: 237, 52, 57;
+        }
+
+
+        .card-price {
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            transition: var(--transition-default);
+        }
+
+        .card-price:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .card-price .card-header {
+            min-height: 160px;
+        }
+
+        .card-price .card-header:before {
+            background-color: #2a2a33;
+            width: 100%;
+            height: 100%;
+            opacity: 0.7;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+
+        .card-price .card-header:after {
+            background: var(--urlImg) center center/cover no-repeat;
+            width: 100%;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            height: 100%;
+        }
+
+        .card-price .card-header .card-title {
+            padding: 45px 15px;
+            border-bottom: 5px solid var(--primary-color);
+            font-size: 1.35em;
+            font-weight: 700;
+        }
+
+        .card-price .card-body ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .card-price .card-body ul > li {
+            padding: 15px 0;
+            font-size: 1.075em;
+            color: var(--bs-gray-700);
+        }
+
+        .card-price .card-body ul > li:nth-child(odd) {
+            background: #f4f4f4;
+        }
+
+        .card-price .card-body .card-info {
+            padding: 15px 15px 25px;
+        }
+
+        .card-price .card-body .card-info .card-number {
+            color: var(--bs-danger);
+            padding: 10px 0;
+            font-size: 1.35em;
+            font-weight: 700;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="main" class="main">
+    <div class="section-prices section-gap">
+        <div class="container">
+            <div class="section-heading">
+                <div class="heading-title">
+                    SẢN PHẨM PHẦN MỀM
+                </div>
+                <div class="heading-description">
+                    Cung cấp các giải pháp phần mềm, và ứng dụng điện tử tiên tiến cho các doanh nghiệp, tổ chức. Tuân
+                    thủ các tiêu chuẩn cao về bảo mật, tuân theo các thông tư, nghị định với phần mềm đặc thù.
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card-price card border-0 position-relative overflow-hidden"
+                         style="--urlImg: url('../images/prices/hospital.jpg')">
+                        <div class="card-header p-0 mb-0 border-0 bg-transparent hstack justify-content-center pseudo overflow-hidden">
+                            <div class="card-title hstack text-center justify-content-center text-uppercase pseudo overflow-hidden mb-0 position-relative zi-2 text-white">
+                                Phần mềm quản lý bệnh viện, phòng khám
+                            </div>
+                        </div>
+                        <div class="card-body p-0 position-relative zi-2 bg-white">
+                            <ul>
+                                <li>
+                                    Quản lý phòng khám
+                                </li>
+                                <li>
+                                    Quản lý bệnh viện
+                                </li>
+                                <li>
+                                    Quản lý trung tâm y tế
+                                </li>
+                            </ul>
+                            <div class="card-info vstack text-center">
+                                <div class="card-number">
+                                    Liên hệ
+                                </div>
+                                <div class="card-button">
+                                    <a href="" class="button-theme button-theme_primary" aria-label="Chi tiết">
+                                        Chi tiết <i class="far fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card-price card border-0 position-relative overflow-hidden"
+                         style="--urlImg: url('../images/prices/golf.jpg')">
+                        <div class="card-header p-0 mb-0 border-0 bg-transparent hstack justify-content-center pseudo overflow-hidden">
+                            <div class="card-title hstack text-center justify-content-center text-uppercase pseudo overflow-hidden mb-0 position-relative zi-2 text-white">
+                                PHẦN MỀM QUẢN LÝ SÂN ĐÁNH GOLF
+                            </div>
+                        </div>
+                        <div class="card-body p-0 position-relative zi-2 bg-white">
+                            <ul>
+                                <li>
+                                    Quản lý đặt sân
+                                </li>
+                                <li>
+                                    Điều hành sân
+                                </li>
+                                <li>
+                                    Quản lý dịch vụ golf
+                                </li>
+                            </ul>
+                            <div class="card-info vstack text-center">
+                                <div class="card-number">
+                                    Liên hệ
+                                </div>
+                                <div class="card-button">
+                                    <a href="" class="button-theme button-theme_primary" aria-label="Chi tiết">
+                                        Chi tiết <i class="far fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card-price card border-0 position-relative overflow-hidden"
+                         style="--urlImg: url('../images/prices/school.jpg')">
+                        <div class="card-header p-0 mb-0 border-0 bg-transparent hstack justify-content-center pseudo overflow-hidden">
+                            <div class="card-title hstack text-center justify-content-center text-uppercase pseudo overflow-hidden mb-0 position-relative zi-2 text-white">
+                                PHẦN MỀM QUẢN LÝ TRƯỜNG HỌC
+                            </div>
+                        </div>
+                        <div class="card-body p-0 position-relative zi-2 bg-white">
+                            <ul>
+                                <li>
+                                    Quản lý nhà trẻ
+                                </li>
+                                <li>
+                                    Quản lý trường học
+                                </li>
+                                <li>
+                                    Quản lý giáo dục
+                                </li>
+                            </ul>
+                            <div class="card-info vstack text-center">
+                                <div class="card-number">
+                                    Liên hệ
+                                </div>
+                                <div class="card-button">
+                                    <a href="" class="button-theme button-theme_primary" aria-label="Chi tiết">
+                                        Chi tiết <i class="far fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3">
+                    <div class="card-price card border-0 position-relative overflow-hidden"
+                         style="--urlImg: url('../images/prices/hotel.jpeg')">
+                        <div class="card-header p-0 mb-0 border-0 bg-transparent hstack justify-content-center pseudo overflow-hidden">
+                            <div class="card-title hstack text-center justify-content-center text-uppercase pseudo overflow-hidden mb-0 position-relative zi-2 text-white">
+                                PHẦN MỀM QUẢN LÝ KHÁCH SẠN
+                            </div>
+                        </div>
+                        <div class="card-body p-0 position-relative zi-2 bg-white">
+                            <ul>
+                                <li>
+                                    Quản lý nhà nghỉ khách sạn
+                                </li>
+                                <li>
+                                    Quản lý homestay
+                                </li>
+                                <li>
+                                    Quản lý resort
+                                </li>
+                            </ul>
+                            <div class="card-info vstack text-center">
+                                <div class="card-number">
+                                    Liên hệ
+                                </div>
+                                <div class="card-button">
+                                    <a href="" class="button-theme button-theme_primary" aria-label="Chi tiết">
+                                        Chi tiết <i class="far fa-angle-double-right ms-2"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+        src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/js/app.js"></script>
+</body>
+</html>
