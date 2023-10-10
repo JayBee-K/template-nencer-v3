@@ -3,81 +3,6 @@
 	z-index: 3;
 }
 
-.header .header-top {
-	background-color: var(--primary-color);
-}
-
-.header .top-language .language-item {
-	transition: var(--transition-default);
-	padding: 8px 12px;
-	border-radius: 4px;
-}
-
-.header .top-language .language-item .language-item_img {
-	height: 15px;
-}
-
-.header .top-language .language-item .language-item_text {
-	margin-left: .25em;
-}
-
-.header .top-language .language-item:hover {
-	background-color: rgba(255, 255, 255, .05);
-}
-
-.header .top-language .language-item.is-active {
-	background-color: rgba(255, 255, 255, .2);
-}
-
-.header .bar-contact .bar-item:hover {
-	opacity: .8;
-}
-
-.header .bar-user .bar-user_btn {
-	background: rgba(255, 255, 255, .2);
-	padding: 12px 20px;
-	transition: var(--transition-default);
-}
-
-.header .bar-user:hover .bar-user_btn:hover {
-	background: rgba(255, 255, 255, .1);
-}
-
-.header .bar-user .bar-user_list {
-	background-color: var(--bs-white);
-	min-width: 175px;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-	transition: var(--transition-default);
-	border-radius: 0 0 4px 4px;
-	opacity: 0;
-	visibility: hidden;
-	pointer-events: none;
-	top: 100%;
-	right: 15px;
-}
-
-.header .bar-user:hover .bar-user_list {
-	opacity: 1;
-	visibility: visible;
-	pointer-events: auto;
-	top: 100%;
-	right: 0;
-}
-
-.header .bar-user .bar-user_list .user-item {
-	padding: 12px 15px;
-	color: var(--bs-dark);
-}
-
-.header .bar-user .bar-user_list > li:nth-child(even) .user-item {
-	background-color: #f4f4f4;
-}
-
-.header .bar-user .bar-user_list .user-item:hover {
-	color: var(--bs-white);
-	background-color: var(--primary-color) !important;
-}
-
 .header .header-main {
 	box-shadow: 0px 0px 33.4221px rgba(130, 89, 9, 0.0575083), 0px 2.5182px 2.21381px rgba(130, 89, 9, 0.0224916);
 }
@@ -355,6 +280,8 @@
 	animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
+	width: 650px;
+	height: 650px;
 }
 
 @keyframes circleRotate {
@@ -523,19 +450,14 @@
 
 .procedure-list {
 	background: var(--bs-white);
-	border: 1px solid #ededed;
 }
 
 .procedure-item {
-	padding: 20px 25px;
+	padding: 15px 20px;
 }
 
 .procedure-item:nth-child(even) {
 	background-color: #f4f4f4;
-}
-
-.procedure-item + .procedure-item {
-	border-top: 1px solid #ededed;
 }
 
 .procedure-item .procedure-item_icon {
