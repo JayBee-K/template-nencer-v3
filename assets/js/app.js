@@ -118,6 +118,37 @@ const handleStickHeader = function () {
     });
 }
 
+const handleCopyValue = function () {
+    const copyButtons = document.querySelectorAll('.button-copy');
+    if (copyButtons) {
+        copyButtons.forEach(function (copyButton) {
+            copyButton.addEventListener('click', function () {
+                const valueToCopy = copyButton.getAttribute('data-value');
+
+                const tempTextArea = document.createElement('textarea');
+                tempTextArea.style.cssText = 'position: absolute; left: -99999px';
+                tempTextArea.setAttribute("id", "textareaCopy");
+                document.body.appendChild(tempTextArea);
+
+                let textareaElm = document.getElementById('textareaCopy');
+                textareaElm.value = valueToCopy;
+                textareaElm.select();
+                textareaElm.setSelectionRange(0, 99999);
+                document.execCommand('copy');
+
+                document.body.removeChild(textareaElm);
+
+                if (copyButton.getAttribute('data-bs-toggle') === 'tooltip') {
+                    copyButton.setAttribute('title', 'Đã sao chép');
+
+                    const tooltip = bootstrap.Tooltip.getInstance(copyButton);
+                    tooltip.setContent({'.tooltip-inner': 'Đã sao chép'})
+                }
+            });
+        })
+    }
+}
+
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
     handleCallMenu();
@@ -141,6 +172,7 @@ $(function () {
             }
         });
     }
+
     if ($('#slider-service').length) {
         new Swiper('#slider-service .swiper', {
             speed: 500, slidesPerView: 5, preloadImages: false, spaceBetween: 24, loop: true, autoplay: {
@@ -162,6 +194,7 @@ $(function () {
             },
         });
     }
+
     if ($('#slider-partner').length) {
         new Swiper('#slider-partner .swiper', {
             speed: 500, slidesPerView: 6, preloadImages: false, spaceBetween: 24, loop: true, autoplay: {
@@ -189,5 +222,10 @@ $(function () {
             $(this).addClass('table table-bordered');
             $(this).wrap('<div class="table-responsive"></div>');
         })
+    }
+
+    handleCopyValue();
+    if ($('[data-bs-toggle="tooltip"]').length) {
+        $('[data-bs-toggle="tooltip"]').tooltip();
     }
 });
