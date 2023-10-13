@@ -1,855 +1,1145 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
-	<title>Template Nencer</title>
-	<meta name="description" content="Template Nencer">
-	<meta name="author" content="">
+    <title>Template Nencer</title>
+    <meta name="description" content="Template Nencer">
+    <meta name="author" content="">
 
-	<meta property="og:title" content="Template Nencer">
-	<meta property="og:type" content="website">
-	<meta property="og:url" content="">
-	<meta property="og:description" content="Template Nencer">
-	<meta property="og:image" content="">
+    <meta property="og:title" content="Template Nencer">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:description" content="Template Nencer">
+    <meta property="og:image" content="">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-	      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
 
-	<link rel="icon" href="./assets/images/favicon.png">
-	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
-	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
-	<link rel="stylesheet" href="./assets/css/base.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="./assets/images/favicon.png">
+    <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
-	<style>
-		:root {
-			--primary-color: #0867AD;
-			--primary-hover: #045491;
-			--primary-rgb: 8, 103, 173;
-			--secondary-color: #ED3439;
-			--secondary-hover: #c62a2e;
-			--secondary-rgb: 237, 52, 57;
-		}
-	</style>
+    <style>
+        :root {
+            --primary-color: #0867AD;
+            --primary-hover: #045491;
+            --primary-rgb: 8, 103, 173;
+            --secondary-color: #ED3439;
+            --secondary-hover: #c62a2e;
+            --secondary-rgb: 237, 52, 57;
+        }
+    </style>
 </head>
 <body>
 
 <div id="header" class="header">
-	<div class="header-main bg-white">
-		<div class="container">
-			<div class="row align-items-center justify-content-between">
-				<div class="col-lg-2 col-4">
-					<div class="header-logo">
-						<a href="" class="hstack align-items-center" aria-label="">
-							<img src="./assets/images/logo.png" class="img-fluid" alt="">
-						</a>
-					</div>
-				</div>
-				<div class="col-lg-10 col-8">
-					<div class="hstack justify-content-end">
-						<div id="header-navigation" class="header-navigation">
-							<ul>
-								<li class="navigation-logo d-flex d-lg-none">
-									<a href="/" class="d-inline-flex align-middle">
-										<img src="./assets/images/logo-white.png" class="img-fluid">
-									</a>
-								</li>
-								<li>
-									<a href=""
-									   aria-label="">
-										Phần mềm <i class="fal fa-angle-down"></i>
-									</a>
-									<ul>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer HIS
-													</span>
-													<span class="navigation-item_sub">
-														Quản lý y tế
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer GOLF
-													</span>
-													<span class="navigation-item_sub">
-														Quản lý sân golf
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer EDU
-													</span>
-													<span class="navigation-item_sub">
-														Quản lý giáo dục
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer PMS
-													</span>
-													<span class="navigation-item_sub">
-														Quản lý khách sạn
-													</span>
-												</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href=""
-									   aria-label="">
-										Thiết kế web <i class="fal fa-angle-down"></i>
-									</a>
-									<ul>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer GIFTCODE
-													</span>
-													<span class="navigation-item_sub">
-														Bán thẻ cào
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer BOOKING GOLF
-													</span>
-													<span class="navigation-item_sub">
-														Đặt lịch chơi golf
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer Travel
-													</span>
-													<span class="navigation-item_sub">
-														Đặt chỗ du lịch
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer CART
-													</span>
-													<span class="navigation-item_sub">
-														Bán hàng trực tuyến
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer FILE
-													</span>
-													<span class="navigation-item_sub">
-														Bán tài liệu số
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer BUSINESS
-													</span>
-													<span class="navigation-item_sub">
-														Quảng bá doanh nghiệp
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer INVOCIE
-													</span>
-													<span class="navigation-item_sub">
-														Nhắc lịch thanh toán
-													</span>
-												</span>
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												<span class="navigation-item_icon">
-													<img src="./assets/images/hospital.png" class="img-fluid" alt="">
-												</span>
-												<span class="navigation-item_content">
-													<span class="navigation-item_title">
-														Nencer LECTURE
-													</span>
-													<span class="navigation-item_sub">
-														Dạy học trực tuyến
-													</span>
-												</span>
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href=""
-									   aria-label="">
-										Dịch vụ <i class="fal fa-angle-down"></i>
-									</a>
-									<ul>
-										<li>
-											<a href=""
-											   aria-label="">
-												Tên miền
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												Máy chủ ảo
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												Máy chủ vật lý
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												Email doanh nghiệp
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												Chứng chỉ SSL
-											</a>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<a href=""
-									   aria-label="">
-										Thuê website
-									</a>
-								</li>
-								<li>
-									<a href=""
-									   aria-label="">
-										Thông tin <i class="fal fa-angle-down"></i>
-									</a>
-									<ul>
-										<li>
-											<a href=""
-											   aria-label="">
-												Về chúng tôi
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												Tin tức
-											</a>
-										</li>
-										<li>
-											<a href=""
-											   aria-label="">
-												Thanh toán
-											</a>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-						<div class="header-users hstack">
-							<a href="" class="button-theme button-theme_primary shadow-none rounded-1"
-							   aria-label="Đăng ký">
-								Đăng Ký
-							</a>
-							<div class="header-user position-relative">
-								<div role="button" class="header-user_btn link-default hstack align-items-center">
-									<i class="far fa-user fz-18"></i>
-								</div>
-								<ul class="list-unstyled mb-0 header-user_list position-absolute">
-									<li>
-										<a href="" class="user-item hstack align-items-center">
-											Đăng nhập tài khoản
-										</a>
-									</li>
-									<li>
-										<a href="" class="user-item hstack align-items-center">
-											Thông tin tài khoản
-										</a>
-									</li>
-									<li>
-										<a href="" class="user-item hstack align-items-center">
-											Đơn hàng của bạn
-										</a>
-									</li>
-									<li>
-										<a href="" class="user-item hstack align-items-center">
-											Đăng xuất
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="header-language position-relative">
-							<div role="button" class="header-language_btn link-default hstack">
-								<div class="header-language_btn__item">
-									<img src="./assets/images/language/vn.png" alt="">
-								</div>
-								<i class="fas fa-angle-down d-none d-xl-inline"></i>
-							</div>
-							<ul class="list-unstyled mb-0 header-language_list position-absolute">
-								<li>
-									<a href="" class="language-item language-item_active hstack align-items-center">
-										<img src="./assets/images/language/vn.png" alt="">
-										Tiếng Việt
-									</a>
-								</li>
-								<li>
-									<a href="" class="language-item hstack align-items-center">
-										<img src="./assets/images/language/en.png" alt="">
-										English
-									</a>
-								</li>
-								<li>
-									<a href="" class="language-item hstack align-items-center">
-										<img src="./assets/images/language/cn.png" alt="">
-										简体中文
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="header-hamburger d-flex d-lg-none">
-							<button type="button" class="hamburger-button" id="hamburger-button">
-								<span></span>
-								<span></span>
-								<span></span>
-								<span></span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="header-overlay" id="header-overlay"></div>
+    <div class="header-main bg-white">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-2 col-4">
+                    <div class="header-logo">
+                        <a href="" class="hstack align-items-center" aria-label="">
+                            <img src="./assets/images/logo.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-8">
+                    <div class="hstack justify-content-end">
+                        <div id="header-navigation" class="header-navigation">
+                            <ul>
+                                <li class="navigation-logo d-flex d-lg-none">
+                                    <a href="/" class="d-inline-flex align-middle">
+                                        <img src="./assets/images/logo-white.png" class="img-fluid">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                       aria-label="">
+                                        Phần mềm <i class="fal fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer HIS
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Quản lý y tế
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer GOLF
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Quản lý sân golf
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer EDU
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Quản lý giáo dục
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer PMS
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Quản lý khách sạn
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href=""
+                                       aria-label="">
+                                        Thiết kế web <i class="fal fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer GIFTCODE
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Bán thẻ cào
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer BOOKING GOLF
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Đặt lịch chơi golf
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer Travel
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Đặt chỗ du lịch
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer CART
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Bán hàng trực tuyến
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer FILE
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Bán tài liệu số
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer BUSINESS
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Quảng bá doanh nghiệp
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer INVOCIE
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Nhắc lịch thanh toán
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                <span class="navigation-item_icon">
+                                                    <img src="./assets/images/hospital.png" class="img-fluid" alt="">
+                                                </span>
+                                                <span class="navigation-item_content">
+                                                    <span class="navigation-item_title">
+                                                        Nencer LECTURE
+                                                    </span>
+                                                    <span class="navigation-item_sub">
+                                                        Dạy học trực tuyến
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href=""
+                                       aria-label="">
+                                        Dịch vụ <i class="fal fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                Tên miền
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                Máy chủ ảo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                Máy chủ vật lý
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                Email doanh nghiệp
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                Chứng chỉ SSL
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href=""
+                                       aria-label="">
+                                        Thuê website
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href=""
+                                       aria-label="">
+                                        Thông tin <i class="fal fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                Về chúng tôi
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                Tin tức
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href=""
+                                               aria-label="">
+                                                Thanh toán
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-users hstack">
+                            <a href="" class="button-theme button-theme_primary shadow-none rounded-1"
+                               aria-label="Đăng ký">
+                                Đăng Ký
+                            </a>
+                            <div class="header-user position-relative">
+                                <div role="button" class="header-user_btn link-default hstack align-items-center">
+                                    <i class="far fa-user fz-18"></i>
+                                </div>
+                                <ul class="list-unstyled mb-0 header-user_list position-absolute">
+                                    <li>
+                                        <a href="" class="user-item hstack align-items-center">
+                                            Đăng nhập tài khoản
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="user-item hstack align-items-center">
+                                            Thông tin tài khoản
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="user-item hstack align-items-center">
+                                            Đơn hàng của bạn
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="user-item hstack align-items-center">
+                                            Đăng xuất
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="header-language position-relative">
+                            <div role="button" class="header-language_btn link-default hstack">
+                                <div class="header-language_btn__item">
+                                    <img src="./assets/images/language/vn.png" alt="">
+                                </div>
+                                <i class="fas fa-angle-down d-none d-xl-inline"></i>
+                            </div>
+                            <ul class="list-unstyled mb-0 header-language_list position-absolute">
+                                <li>
+                                    <a href="" class="language-item language-item_active hstack align-items-center">
+                                        <img src="./assets/images/language/vn.png" alt="">
+                                        Tiếng Việt
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="language-item hstack align-items-center">
+                                        <img src="./assets/images/language/en.png" alt="">
+                                        English
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="language-item hstack align-items-center">
+                                        <img src="./assets/images/language/cn.png" alt="">
+                                        简体中文
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-hamburger d-flex d-lg-none">
+                            <button type="button" class="hamburger-button" id="hamburger-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-overlay" id="header-overlay"></div>
 </div>
 
 <div id="main" class="main">
-	<div class="section-banner section-banner_light position-relative pseudo vstack justify-content-center text-center"
-	     style="background-image: url('./assets/images/banner-phan-mem-y-te.png')">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-10">
-					<div class="banner-inner position-relative zi-2">
-						<div class="banner-title">
-							CÔNG TY PHẦN MỀM TRỰC TUYẾN NENCER
-						</div>
-						<div class="banner-description">
-							Nencer Software | Hơn 10 năm kinh nghiệm trong lĩnh vực phần mềm online, thiết kế website và
-							ứng
-							dụng di động. Đáp ứng đa dạng các yêu cầu và mục tiêu kinh doanh cho các doanh nghiệp và cá
-							nhân
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="section-software">
-		<div class="section-gap">
-			<div class="container">
-				<div class="section-heading">
-					<div class="heading-title">PHẦN MỀM QUẢN LÝ GOLF CHUYÊN NGHIỆP</div>
-					<div class="heading-description">Phần mềm được phát triển trên nền tảng các công nghệ tiên tiến nhất của Microsoft kết hợp với công nghệ thẻ RFID hiện đại, khả năng tham số hóa hệ thống, phân quyền bảo mật chặt chẽ đến từng chức năng và khả năng tùy biến, áp dụng cho nhiều loại hình sân Gôn khác nhau.</div>
-				</div>
-				<div class="row">
+    <div class="section-banner section-banner_light position-relative pseudo vstack justify-content-center text-center"
+         style="background-image: url('./assets/images/banner-phan-mem-y-te.png')">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="banner-inner position-relative zi-2">
+                        <div class="banner-title">
+                            CÔNG TY PHẦN MỀM TRỰC TUYẾN NENCER
+                        </div>
+                        <div class="banner-description">
+                            Nencer Software | Hơn 10 năm kinh nghiệm trong lĩnh vực phần mềm online, thiết kế website và
+                            ứng
+                            dụng di động. Đáp ứng đa dạng các yêu cầu và mục tiêu kinh doanh cho các doanh nghiệp và cá
+                            nhân
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-software">
+        <div class="section-gap">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="heading-title">ƯU ĐIỂM VƯỢT TRỘI CỦA PHẦN MỀM Y TẾ NENCER HIS</div>
+                    <div class="heading-description">Tính năng của phần mềm quản lý bệnh viện, quản lý phòng khám được
+                        xây dựng dựa trên kinh nghiệm thực tế và sự đóng góp từ các chuyên gia y tế và Bác sĩ đầu ngành
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="advantage-card pseudo h-100 card border-0 bg-white p-0">
+                            <div class="card-body position-relative zi-1 vstack justify-content-center text-center gap-20px">
+                                <div class="card-icon hstack rounded-circle justify-content-center transition-default mx-auto">
+                                    <i class="far fa-tachometer-alt"></i>
+                                </div>
+                                <div class="card-title mb-0 fw-bold">
+                                    Linh hoạt & Hiệu quả
+                                </div>
+                                <div class="card-text">
+                                    Linh hoạt tùy chỉnh, quy trình quản lý được thiết kế bám sát nghiệp vụ tại từng cơ
+                                    sở y
+                                    tế.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="advantage-card pseudo h-100 card border-0 bg-white p-0">
+                            <div class="card-body position-relative zi-1 vstack justify-content-center text-center gap-20px">
+                                <div class="card-icon hstack rounded-circle justify-content-center transition-default mx-auto">
+                                    <i class="far fa-bullseye-pointer"></i>
+                                </div>
+                                <div class="card-title mb-0 fw-bold">
+                                    Trực quan & Dễ dùng
+                                </div>
+                                <div class="card-text">
+                                    Thông tin thể hiện tại 1 nơi, các tính năng được thiết kế tối giản phục vụ cho nhiều
+                                    đối tượng.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="advantage-card pseudo h-100 card border-0 bg-white p-0">
+                            <div class="card-body position-relative zi-1 vstack justify-content-center text-center gap-20px">
+                                <div class="card-icon hstack rounded-circle justify-content-center transition-default mx-auto">
+                                    <i class="far fa-shield-check"></i>
+                                </div>
+                                <div class="card-title mb-0 fw-bold">
+                                    An toàn & Bảo mật
+                                </div>
+                                <div class="card-text">
+                                    Bảo mật hệ thống qua nhiều lớp phân quyền, kiểm soát mọi hoạt động của người dùng,
+                                    lưu trữ vĩnh viễn
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="advantage-card pseudo h-100 card border-0 bg-white p-0">
+                            <div class="card-body position-relative zi-1 vstack justify-content-center text-center gap-20px">
+                                <div class="card-icon hstack rounded-circle justify-content-center transition-default mx-auto">
+                                    <i class="far fa-link"></i>
+                                </div>
+                                <div class="card-title mb-0 fw-bold">
+                                    Liên thông & Quy chuẩn
+                                </div>
+                                <div class="card-text">
+                                    Kết nối bảo hiểm y tế, cổng dược quốc giá, vận hành và các mẫu báo cáo theo đúng
+                                    tiêu chuẩn bộ y tế.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-featured section-gap position-relative overflow-hidden">
+            <div class="container">
+                <div class="section-heading">
+                    <div class="heading-title">
+                        LỰA CHỌN TỐT NHẤT CHO DOANH NGHIỆP CỦA BẠN
+                    </div>
+                    <div class="heading-description">
+                        Công Ty Phần Mềm Trực Tuyến Nencer Software
+                    </div>
+                </div>
+                <div class="position-relative py-lg-5">
+                    <div class="featured-item_ring hstack justify-content-center position-absolute">
+                        <img src="./assets/images/featured/rings.png" alt="">
+                    </div>
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-4">
+                            <div class="featured-content vstack gap-30px">
+                                <div class="featured-content_item">
+                                    <div class="featured-content_header hstack flex-lg-row justify-content-lg-end flex-row-reverse gap-10px">
+                                        <div class="featured-content_title text-lg-end fw-bold">
+                                            Sản phẩm chất lượng
+                                        </div>
+                                        <div class="featured-content_icon hstack align-items-center justify-content-center">
+                                            <i class="far fa-thumbs-up"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content_body text-lg-end">
+                                        Cam kết mang đến những phần mềm hàng đầu, vượt qua kỳ vọng của khách hàng, với
+                                        chất
+                                        lượng và hiệu suất tối ưu.
+                                    </div>
+                                </div>
+                                <div class="featured-content_item">
+                                    <div class="featured-content_header hstack flex-lg-row justify-content-lg-end flex-row-reverse gap-10px">
+                                        <div class="featured-content_title text-lg-end fw-bold">
+                                            Bảo mật và tuân thủ
+                                        </div>
+                                        <div class="featured-content_icon hstack align-items-center justify-content-center">
+                                            <i class="far fa-shield-check"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content_body text-lg-end">
+                                        Cam kết bảo vệ dữ liệu, cập nhật tiêu chuẩn bảo mật tiên tiến nhất và tuân thủ
+                                        nghiêm ngặt các quy định ngành
+                                    </div>
+                                </div>
+                                <div class="featured-content_item">
+                                    <div class="featured-content_header hstack flex-lg-row justify-content-lg-end flex-row-reverse gap-10px">
+                                        <div class="featured-content_title text-lg-end fw-bold">
+                                            Đội ngũ kỹ thuật
+                                        </div>
+                                        <div class="featured-content_icon hstack align-items-center justify-content-center">
+                                            <i class="far fa-users-cog"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content_body text-lg-end">
+                                        Đội ngũ kỹ sư và chuyên gia chuyên môn cao giàu kinh nghiệm. Có trên 10 năm kinh
+                                        nghiệm làm việc với khách hàng.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="featured-image">
+                                <img src="./assets/images/featured/nencer-software-cam-ket-mang-den-nhung-san-pham-phan-mem-tot-nhat.jpg"
+                                     class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="featured-content vstack gap-30px">
+                                <div class="featured-content_item">
+                                    <div class="featured-content_header hstack gap-10px">
+                                        <div class="featured-content_title fw-bold order-2">
+                                            Công nghệ hiện đại
+                                        </div>
+                                        <div class="featured-content_icon hstack align-items-center justify-content-center order-1">
+                                            <i class="far fa-chalkboard-teacher"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content_body">
+                                        Các phần mềm được sử dụng ngôn ngữ lập trình và công nghệ mới nhất. Đảm bảo sử
+                                        dụng
+                                        nhanh dễ dàng và hiệu quả
+                                    </div>
+                                </div>
+                                <div class="featured-content_item">
+                                    <div class="featured-content_header hstack gap-10px">
+                                        <div class="featured-content_title fw-bold order-2">
+                                            Hoàn toàn tự động
+                                        </div>
+                                        <div class="featured-content_icon hstack align-items-center justify-content-center order-1">
+                                            <i class="far fa-robot"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content_body">
+                                        Tự động hóa hoàn toàn các nghiệp vụ, giảm bớt thời gian và nhân sự làm việc thủ
+                                        công, không còn phải nhập liệu
+                                    </div>
+                                </div>
+                                <div class="featured-content_item">
+                                    <div class="featured-content_header hstack gap-10px">
+                                        <div class="featured-content_title fw-bold order-2">
+                                            Hỗ trợ chuyên nghiệp 24/7
+                                        </div>
+                                        <div class="featured-content_icon hstack align-items-center justify-content-center order-1">
+                                            <i class="far fa-user-headset"></i>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content_body">
+                                        Dịch vụ sau bán hàng và hỗ trợ kỹ thuật luôn sẵn lòng giải đáp mọi thắc mắc và
+                                        vấn
+                                        đề mà khách hàng gặp phải 24/7
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-gap section-table">
 
-				</div>
-			</div>
-		</div>
-	</div>
+        </div>
+        <div class="section-payment section-payment_bg">
+            <div class="container">
+                <div class="payment-detail">
+                    <div class="payment-item">
+                        <div class="section-heading">
+                            <div class="heading-title">
+                                BẠN CẦN TƯ VẤN THÊM
+                            </div>
+                            <div class="heading-description">
+                                Chúng tôi luôn ở đây 24/7 để phản hồi yêu cầu của bạn, bất kể là ngày hay đêm, dù nắng
+                                hay
+                                mưa !
+                            </div>
+                        </div>
+                        <div class="payment-content mt-5">
+                            <div class="row g-4">
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="payment-card vstack gap-20px h-100">
+                                        <div class="payment-card_icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="payment-card_title">
+                                            Gửi email
+                                        </div>
+                                        <div class="payment-card_text">
+                                            Bạn cần thêm thông tin ? Gửi ngay email cho chúng tôi để nhận được câu trả
+                                            lời.
+                                        </div>
+                                        <div class="payment-card_button">
+                                            <a href="" class="button-theme button-theme_primary shadow-none rounded-1"
+                                               aria-label="Gửi yêu cầu">
+                                                Gửi yêu cầu <i class="fal fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="payment-card vstack gap-20px h-100">
+                                        <div class="payment-card_icon">
+                                            <i class="fas fa-ticket-alt"></i>
+                                        </div>
+                                        <div class="payment-card_title">
+                                            Gửi Ticket
+                                        </div>
+                                        <div class="payment-card_text">
+                                            Kênh tiếp nhận yêu cầu hỗ trợ dịch vụ dành cho khách hàng của HOSTVN.
+
+                                        </div>
+                                        <div class="payment-card_button">
+                                            <a href="" class="button-theme button-theme_primary shadow-none rounded-1"
+                                               aria-label="Tạo ticket">
+                                                Tạo ticket <i class="fal fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="payment-card vstack gap-20px h-100">
+                                        <div class="payment-card_icon">
+                                            <i class="fas fa-comment-dots"></i>
+                                        </div>
+                                        <div class="payment-card_title">
+                                            Live Chat
+                                        </div>
+                                        <div class="payment-card_text">
+                                            Bạn có câu hỏi? Hãy chat ngay với nhân viên tư vấn để được giải đáp.
+                                        </div>
+                                        <div class="payment-card_button">
+                                            <a href="" class="button-theme button-theme_primary shadow-none rounded-1"
+                                               aria-label="Chat ngay">
+                                                Chat ngay <i class="fal fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="payment-card vstack gap-20px h-100">
+                                        <div class="payment-card_icon">
+                                            <i class="fas fa-phone-volume"></i>
+                                        </div>
+                                        <div class="payment-card_title">
+                                            Tư vấn điện thoa
+                                        </div>
+                                        <div class="payment-card_text">
+                                            Hãy nhập số điện thoại của bạn vào ô dưới đây để nhân viên tư vấn liên hệ
+                                            lại.
+                                        </div>
+                                        <div class="payment-card_button">
+                                            <a href="" class="button-theme button-theme_primary shadow-none rounded-1"
+                                               aria-label="Yêu cầu gọi">
+                                                Yêu cầu gọi <i class="fal fa-angle-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <footer id="footer" class="footer">
-	<div class="footer-main">
-		<div class="position-relative zi-2">
-			<div class="container">
-				<div class="section-gap">
-					<div class="row g-3 justify-content-center">
-						<div class="col-lg-4 col-xl-3">
-							<div class="footer-contact hstack gap-15px position-relative">
-								<div class="footer-contact_icon flex-shrink-0">
-									<i class="fas fa-user-headset"></i>
-								</div>
-								<div class="footer-contact_content">
-									<div class="footer-contact_title">
-										Support 24/24
-									</div>
-									<div class="footer-contact_number">
-										0969.110.811
-									</div>
-								</div>
-								<a href="" class="stretched-link"></a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-xl-3">
-							<div class="footer-contact hstack gap-15px position-relative">
-								<div class="footer-contact_icon flex-shrink-0">
-									<img src="./assets/images/zalo-40px.png" width="40px" height="40px" alt="">
-								</div>
-								<div class="footer-contact_content">
-									<div class="footer-contact_title">
-										Chat Zalo
-									</div>
-									<div class="footer-contact_number">
-										0969.110.811
-									</div>
-								</div>
-								<a href="" class="stretched-link"></a>
-							</div>
-						</div>
-						<div class="col-lg-4 col-xl-3">
-							<div class="footer-contact hstack gap-15px position-relative">
-								<div class="footer-contact_icon flex-shrink-0">
-									<i class="fas fa-envelope"></i>
-								</div>
-								<div class="footer-contact_content">
-									<div class="footer-contact_title">
-										Email Support
-									</div>
-									<div class="footer-contact_number">
-										support@nencer.com
-									</div>
-								</div>
-								<a href="" class="stretched-link"></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section-gap">
-					<div class="row">
-						<div class="col-lg-5 col-xl-4">
-							<div class="footer-item">
-								<div class="footer-logo">
-									<a href="/" class="d-inline-block align-middle">
-										<img src="./assets/images/logo-white.png" class="img-fluid" alt="">
-									</a>
-								</div>
-								<div class="footer-title">
-									CÔNG TY TNHH PHẦN MỀM TRỰC TUYẾN NENCER
-								</div>
-								<ul class="footer-list list-unstyled mb-0">
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-map-marker-alt"></i>Số 152 Trần Vỹ, Mai Dịch, Cầu Giấy,
-											                                     Hà
-											                                     Nội
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-phone-rotary"></i>0969110811
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-phone-alt"></i>0969110811
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-envelope"></i>support@nencer.com
-										</a>
-									</li>
-								</ul>
-								<ul class="footer-social list-unstyled mb-0 hstack gap-5px">
-									<li class="footer-social_item">
-										<a href="fb.com/admin" class="footer-social_item--link">
-											<i class="fab fa-facebook-f"></i>
-										</a>
-									</li>
-									<li class="footer-social_item">
-										<a href="fb.com/admin" class="footer-social_item--link">
-											<i class="fab fa-twitter"></i>
-										</a>
-									</li>
-									<li class="footer-social_item">
-										<a href="fb.com/admin" class="footer-social_item--link">
-											<i class="fab fa-google"></i>
-										</a>
-									</li>
-									<li class="footer-social_item">
-										<a href="https://www.youtube.com/watch?v=neCmEbI2VWg"
-										   class="footer-social_item--link">
-											<i class="fab fa-youtube"></i>
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-lg-7 col-xl-8 mt-5 mt-lg-0">
-							<div class="row g-4">
-								<div class="col-6 col-xl-3">
-									<div class="footer-title">
-										PHẦN MỀM
-									</div>
-									<ul class="footer-list footer-link list-unstyled mb-0">
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quản lý trường học
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quản lý bệnh viện
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quản lý khách sạn
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quản lý sân golf
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6 col-xl-3">
-									<div class="footer-title">
-										DỊCH VỤ WEB
-									</div>
-									<ul class="footer-list footer-link list-unstyled mb-0">
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Bán hàng trực tuyến
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Bán file tài liệu
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Học trực tuyến
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Thuê website
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Bán thẻ cào
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Đặt chỗ du lịch
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Booking Golf
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quảng bá doanh nghiệp
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6 col-xl-3">
-									<div class="footer-title">
-										LƯU TRỮ WEB
-									</div>
-									<ul class="footer-list footer-link list-unstyled mb-0">
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Tên miền
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Máy chủ ảo
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Máy chủ vật lý
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Email doanh nghiệp
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Chứng chỉ SSL
-											</a>
-										</li>
-									</ul>
-								</div>
-								<div class="col-6 col-xl-3">
-									<div class="footer-title">
-										THÔNG TIN
-									</div>
-									<ul class="footer-list footer-link list-unstyled mb-0">
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Chia sẻ kiến thức
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Chính sách bảo mật
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Quy định sử dụng
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Miễn trừ trách nhiệm
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Thông tin thanh toán
-											</a>
-										</li>
-										<li class="footer-list_item">
-											<a href="" class="footer-list_item--link">
-												Về chúng tôi
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section-gap">
-					<div class="row g-4">
-						<div class="col-6 col-lg-3">
-							<div class="footer-item">
-								<div class="footer-title">
-									Đại diện tại Hoa Kỳ
-								</div>
-								<ul class="footer-list list-unstyled mb-0">
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-address-card"></i>Mr Jason Tran
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-phone-rotary"></i>+1 (815) 771-0227
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-map-marker-alt"></i>7845 Brookmill Rd, Downey, CA
-											                                     90241-4501
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-6 col-lg-3">
-							<div class="footer-item">
-								<div class="footer-title">
-									Đại diện tại Hàn Quốc
-								</div>
-								<ul class="footer-list list-unstyled mb-0">
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-address-card"></i>Mr Bùi Thanh Quân
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-phone-rotary"></i>+82 (102) 428-6608
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-map-marker-alt"></i>204-12, Gaya-dong, Busanjin-gu,
-											                                     Busan
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-6 col-lg-3">
-							<div class="footer-item">
-								<div class="footer-title">
-									Đại diện tại Châu Âu
-								</div>
-								<ul class="footer-list list-unstyled mb-0">
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-address-card"></i>Ms Tuyết
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-phone-rotary"></i>+68.94.182.9965
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-map-marker-alt"></i>Mlýnská 220/8, Liberec 8, 468 05,
-											                                     Czech
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-6 col-lg-3">
-							<div class="footer-item">
-								<div class="footer-title">
-									Đại diện tại Châu Âu
-								</div>
-								<ul class="footer-list list-unstyled mb-0">
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-address-card"></i>Ms Tuyết
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-phone-rotary"></i>+68.94.182.9965
-										</a>
-									</li>
-									<li class="footer-list_item">
-										<a href="" class="footer-list_item--link">
-											<i class="fas fa-map-marker-alt"></i>Mlýnská 220/8, Liberec 8, 468 05,
-											                                     Czech
-										</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="section-gap">
-					<div class="row justify-content-center justify-content-lg-between">
-						<div class="col-auto">
-							<div class="text-center text-white-50">©2010 - 2023 Software by Nencer LLC.,</div>
-						</div>
-						<div class="col-auto">
-							<div class="hstack justify-content-end gap-10px footer-logos">
-								<a href="">
-									<img src="./assets/images/visa-logo.webp" alt="">
-								</a>
-								<a href="">
-									<img src="./assets/images/master-logo.png" alt="">
-								</a>
-								<a href="">
-									<img src="./assets/images/american-express-logo.svg" alt="">
-								</a>
-								<a href="">
-									<img src="./assets/images/JCB-logo.svg" alt="">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="footer-main">
+        <div class="position-relative zi-2">
+            <div class="container">
+                <div class="section-gap">
+                    <div class="row g-3 justify-content-center">
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="footer-contact hstack gap-15px position-relative">
+                                <div class="footer-contact_icon flex-shrink-0">
+                                    <i class="fas fa-user-headset"></i>
+                                </div>
+                                <div class="footer-contact_content">
+                                    <div class="footer-contact_title">
+                                        Support 24/24
+                                    </div>
+                                    <div class="footer-contact_number">
+                                        0969.110.811
+                                    </div>
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="footer-contact hstack gap-15px position-relative">
+                                <div class="footer-contact_icon flex-shrink-0">
+                                    <img src="./assets/images/zalo-40px.png" width="40px" height="40px" alt="">
+                                </div>
+                                <div class="footer-contact_content">
+                                    <div class="footer-contact_title">
+                                        Chat Zalo
+                                    </div>
+                                    <div class="footer-contact_number">
+                                        0969.110.811
+                                    </div>
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-xl-3">
+                            <div class="footer-contact hstack gap-15px position-relative">
+                                <div class="footer-contact_icon flex-shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="footer-contact_content">
+                                    <div class="footer-contact_title">
+                                        Email Support
+                                    </div>
+                                    <div class="footer-contact_number">
+                                        support@nencer.com
+                                    </div>
+                                </div>
+                                <a href="" class="stretched-link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-gap">
+                    <div class="row">
+                        <div class="col-lg-5 col-xl-4">
+                            <div class="footer-item">
+                                <div class="footer-logo">
+                                    <a href="/" class="d-inline-block align-middle">
+                                        <img src="./assets/images/logo-white.png" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                <div class="footer-title">
+                                    CÔNG TY TNHH PHẦN MỀM TRỰC TUYẾN NENCER
+                                </div>
+                                <ul class="footer-list list-unstyled mb-0">
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-map-marker-alt"></i>Số 152 Trần Vỹ, Mai Dịch, Cầu Giấy,
+                                            Hà
+                                            Nội
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-phone-rotary"></i>0969110811
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-phone-alt"></i>0969110811
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-envelope"></i>support@nencer.com
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-social list-unstyled mb-0 hstack gap-5px">
+                                    <li class="footer-social_item">
+                                        <a href="fb.com/admin" class="footer-social_item--link">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social_item">
+                                        <a href="fb.com/admin" class="footer-social_item--link">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social_item">
+                                        <a href="fb.com/admin" class="footer-social_item--link">
+                                            <i class="fab fa-google"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social_item">
+                                        <a href="https://www.youtube.com/watch?v=neCmEbI2VWg"
+                                           class="footer-social_item--link">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-xl-8 mt-5 mt-lg-0">
+                            <div class="row g-4">
+                                <div class="col-6 col-xl-3">
+                                    <div class="footer-title">
+                                        PHẦN MỀM
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quản lý trường học
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quản lý bệnh viện
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quản lý khách sạn
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quản lý sân golf
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="footer-title">
+                                        DỊCH VỤ WEB
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Bán hàng trực tuyến
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Bán file tài liệu
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Học trực tuyến
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Thuê website
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Bán thẻ cào
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Đặt chỗ du lịch
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Booking Golf
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quảng bá doanh nghiệp
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="footer-title">
+                                        LƯU TRỮ WEB
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Tên miền
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Máy chủ ảo
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Máy chủ vật lý
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Email doanh nghiệp
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Chứng chỉ SSL
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-xl-3">
+                                    <div class="footer-title">
+                                        THÔNG TIN
+                                    </div>
+                                    <ul class="footer-list footer-link list-unstyled mb-0">
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Chia sẻ kiến thức
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Chính sách bảo mật
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Quy định sử dụng
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Miễn trừ trách nhiệm
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Thông tin thanh toán
+                                            </a>
+                                        </li>
+                                        <li class="footer-list_item">
+                                            <a href="" class="footer-list_item--link">
+                                                Về chúng tôi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-gap">
+                    <div class="row g-4">
+                        <div class="col-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-title">
+                                    Đại diện tại Hoa Kỳ
+                                </div>
+                                <ul class="footer-list list-unstyled mb-0">
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-address-card"></i>Mr Jason Tran
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-phone-rotary"></i>+1 (815) 771-0227
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-map-marker-alt"></i>7845 Brookmill Rd, Downey, CA
+                                            90241-4501
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-title">
+                                    Đại diện tại Hàn Quốc
+                                </div>
+                                <ul class="footer-list list-unstyled mb-0">
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-address-card"></i>Mr Bùi Thanh Quân
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-phone-rotary"></i>+82 (102) 428-6608
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-map-marker-alt"></i>204-12, Gaya-dong, Busanjin-gu,
+                                            Busan
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-title">
+                                    Đại diện tại Châu Âu
+                                </div>
+                                <ul class="footer-list list-unstyled mb-0">
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-address-card"></i>Ms Tuyết
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-phone-rotary"></i>+68.94.182.9965
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-map-marker-alt"></i>Mlýnská 220/8, Liberec 8, 468 05,
+                                            Czech
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3">
+                            <div class="footer-item">
+                                <div class="footer-title">
+                                    Đại diện tại Châu Âu
+                                </div>
+                                <ul class="footer-list list-unstyled mb-0">
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-address-card"></i>Ms Tuyết
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-phone-rotary"></i>+68.94.182.9965
+                                        </a>
+                                    </li>
+                                    <li class="footer-list_item">
+                                        <a href="" class="footer-list_item--link">
+                                            <i class="fas fa-map-marker-alt"></i>Mlýnská 220/8, Liberec 8, 468 05,
+                                            Czech
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-gap">
+                    <div class="row justify-content-center justify-content-lg-between">
+                        <div class="col-auto">
+                            <div class="text-center text-white-50">©2010 - 2023 Software by Nencer LLC.,</div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="hstack justify-content-end gap-10px footer-logos">
+                                <a href="">
+                                    <img src="./assets/images/visa-logo.webp" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/master-logo.png" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/american-express-logo.svg" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/JCB-logo.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
