@@ -1642,7 +1642,9 @@
 	color: var(--bs-gray-700);
 	transition: var(--transition-default);
 }
-
+.payment-detail .payment-card .payment-card_button {
+	margin-top: auto;
+}
 .payment-detail .payment-card .payment-card_button .button-theme {
 	text-transform: uppercase;
 	transition: var(--transition-default);
