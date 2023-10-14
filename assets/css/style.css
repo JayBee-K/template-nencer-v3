@@ -1693,6 +1693,51 @@
 	color: var(--primary-color);
 }
 
+.section-software .section-featured {
+	padding-bottom: 80px;
+}
+
+.advantage-card {
+	border-radius: 22px;
+}
+
+.advantage-card .card-body {
+	box-shadow: 0 0 50px 0 rgba(0, 70, 108, .09);
+	padding: 40px 30px 40px;
+	border-radius: 22px;
+}
+
+.advantage-card:before {
+	width: 90%;
+	left: 5%;
+	bottom: -13px;
+	height: 40px;
+	background: rgba(255, 255, 255, .8);
+	border-radius: 22px;
+	position: absolute;
+	box-shadow: 0 0 50px 0 rgba(0, 70, 108, .09);
+	transition: var(--transition-default);
+	z-index: -1;
+}
+
+.advantage-card .card-body .card-icon {
+	width: 100px;
+	height: 100px;
+	font-size: 3.5em;
+	color: var(--primary-color);
+	border-radius: 50%;
+	background: rgba(var(--primary-rgb), .1);
+	border: 6px solid #f4f4f4f0;
+}
+
+.advantage-card .card-body .card-title {
+	font-size: 1.25em;
+}
+
+.advantage-card .card-body .card-text {
+	font-size: 1.075em;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 	.header .header-navigation > ul {
 		gap: 15px;
