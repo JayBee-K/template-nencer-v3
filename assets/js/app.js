@@ -262,13 +262,14 @@ $(function () {
 			spaceBetween: 0,
 			breakpoints: {
 				320: {
-					slidesPerView: 1,
-				}, 375: {
-					slidesPerView: 2,
+					slidesPerView: 1.25,
+					spaceBetween: 10,
 				}, 768: {
-					slidesPerView: 3.5,
+					slidesPerView: 2.25,
+					spaceBetween: 10,
 				}, 991: {
-					slidesPerView: 4.5,
+					slidesPerView: 3.25,
+					spaceBetween: 10,
 				}, 1200: {
 					slidesPerView: 4,
 				}

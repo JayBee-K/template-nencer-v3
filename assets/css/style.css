@@ -2333,6 +2333,24 @@
 	.payment-detail .payment-item .payment-heading .payment-heading_sub {
 		font-size: 1.15em;
 	}
+
+	.advantage-card .card-body .card-title,
+	.procedure-card .card-title{
+		font-size: 1.15em;
+	}
+
+	.advantage-card .card-body .card-text,
+	.procedure-card .card-text{
+		font-size: 1em;
+	}
+
+	.section-software .section-featured {
+		padding-bottom: 35px;
+	}
+
+	.procedure-card {
+		padding: 30px 20px;
+	}
 }
 
 @media screen and (max-width: 768px) {
