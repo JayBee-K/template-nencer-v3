@@ -2308,7 +2308,11 @@
     height: 100%;
     padding: 25px;
     text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     border: 0;
     border-bottom: 3px solid var(--primary-color);
@@ -2577,14 +2581,22 @@
 .card-use {
     border: 0;
     border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     gap: 15px;
 }
 
 .card-use .card-icon {
     width: 150px;
+    -ms-flex-negative: 0;
     flex-shrink: 0;
 }
 
@@ -2607,7 +2619,12 @@
     height: 100%;
     margin-bottom: 0;
     border-left: 1px solid var(--bs-gray-300) !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -2616,11 +2633,17 @@
     margin: 0;
     border-radius: 0;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: left;
     padding-left: 23px;
     border-left: 4px solid transparent;
+    -webkit-transition: var(--transition-default);
+    -o-transition: var(--transition-default);
     transition: var(--transition-default);
     width: 100%;
     color: var(--bs-black);
@@ -3339,9 +3362,16 @@
     }
 
     .card-use {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -3358,8 +3388,12 @@
     }
 
     .section-tab .nav-tabs {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         overflow-x: auto;
+        -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
         white-space: nowrap;
         border-left: 0 !important;
