@@ -288,4 +288,26 @@ $(function () {
 	if ($('[data-bs-toggle="tooltip"]').length) {
 		$('[data-bs-toggle="tooltip"]').tooltip();
 	}
+
+	if ($('#heading-tabs').length > 0) {
+		let itemTab = $("#heading-tabs .nav-item .nav-link");
+
+		const handleSetPositionTab = function (elm) {
+			$("#heading-tabs .bg-tab").css({
+				left: parseInt(elm.offsetLeft) + "px",
+				width: parseInt(elm.offsetWidth) + "px",
+			});
+		}
+
+		if ($("#heading-tabs .nav-item .nav-link.active").length) {
+			handleSetPositionTab($("#heading-tabs .nav-item .nav-link.active")[0]);
+		}
+
+		itemTab.on("click", function () {
+			itemTab.removeClass("active");
+
+			$(this).addClass("active");
+			handleSetPositionTab($(this)[0]);
+		});
+	}
 });
