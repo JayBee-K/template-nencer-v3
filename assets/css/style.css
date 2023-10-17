@@ -2346,13 +2346,6 @@
     color: var(--bs-gray-900);
 }
 
-.section-page .service-bg {
-    position: absolute;
-    right: 0;
-    bottom: 50px;
-    z-index: -1;
-}
-
 .card-table_price {
     height: 100%;
     border: 1px solid rgba(var(--primary-rgb), .4);
@@ -3309,13 +3302,6 @@
     .card-check .card-body .card-title,
     .card-information .card-title {
         font-size: 1.3em;
-    }
-
-    .section-page .service-bg {
-        position: static;
-        right: unset;
-        bottom: unset;
-        z-index: 1;
     }
 
     .card-table_price .card-header .card-title {
