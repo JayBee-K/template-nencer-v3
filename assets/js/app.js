@@ -149,6 +149,19 @@ const handleCopyValue = function () {
 	}
 }
 
+const handleInitFancybox = function () {
+	if (windowWidth <= 991 && $('.initFancybox').length) {
+		$('.initFancybox').each(function () {
+			let elm = $(this);
+			Fancybox.bind(`[data-fancybox=${elm.attr('data-fancybox')}]`, {
+				thumbs: {
+					autoStart: true,
+				},
+			});
+		});
+	}
+}
+
 $(function () {
 	handleApplyCollapse($('#header-navigation > ul'), true, true);
 	handleCallMenu();
@@ -288,4 +301,6 @@ $(function () {
 	if ($('[data-bs-toggle="tooltip"]').length) {
 		$('[data-bs-toggle="tooltip"]').tooltip();
 	}
+
+	handleInitFancybox();
 });

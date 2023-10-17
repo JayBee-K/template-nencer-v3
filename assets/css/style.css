@@ -1222,8 +1222,6 @@
 }
 
 .section-banner .banner-form {
-    margin-top: 40px;
-    padding-top: 40px;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1239,24 +1237,9 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-
-.section-banner .banner-form:before {
-    position: absolute;
-    content: "";
-    background: var(--bs-white);
-    width: 120px;
-    height: 4px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    top: 0;
-    border-radius: 8px;
-}
-
 .section-banner .banner-form .form-text {
     color: var(--bs-white);
-    font-size: 1.35em;
+    font-size: 2em;
     font-weight: 700;
 }
 
@@ -2462,11 +2445,11 @@
 
 .card-table_price .card-body .card-button {
     margin-top: auto;
+	text-align: center;
 }
 
 .card-table_price .card-body .card-button .button-theme {
-    width: 100%;
-    padding: 12px 24px;
+    padding: 12px 36px;
     font-size: 1.15em;
     text-transform: uppercase;
 }
@@ -3407,7 +3390,7 @@
     .section-tab .nav-tabs .nav-item .nav-link {
         border-left: 0;
         border-bottom: 4px solid transparent;
-        font-size: 1.225em;
+        font-size: 1.15em;
         padding-left: 8px;
         padding-right: 8px;
     }
@@ -3415,7 +3398,7 @@
     .section-tab .nav-tabs .nav-item .nav-link.active {
         border-left-color: transparent;
         border-bottom-color: var(--primary-color);
-        font-size: 1.3em;
+        font-size: 1.225em;
     }
 }
 
