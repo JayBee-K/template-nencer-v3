@@ -1237,6 +1237,7 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
+
 .section-banner .banner-form .form-text {
     color: var(--bs-white);
     font-size: 2em;
@@ -2438,7 +2439,7 @@
 
 .card-table_price .card-body .card-button {
     margin-top: auto;
-	text-align: center;
+    text-align: center;
 }
 
 .card-table_price .card-body .card-button .button-theme {
@@ -2639,6 +2640,426 @@
     margin-top: 15px;
 }
 
+.section-manager {
+    background-color: #f4f4f4;
+}
+
+.manager-card {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.manager-card .card-header,
+.manager-card .card-body {
+    padding: 10px;
+}
+
+.manager-sidebar .card-header {
+    padding: 10px 15px;
+    border-bottom: 1px solid var(--bs-gray-200) !important;
+}
+
+.manager-sidebar .card-header .card-title {
+    font-size: 1.15em;
+    color: #4f4f50;
+}
+
+.manager-sidebar .card-body {
+    padding: 2px;
+}
+
+.manager-sidebar .card-body .card-list .link-default {
+    color: #4f4f50;
+    font-size: 1em;
+    width: 100%;
+    padding: 8px 13px;
+    text-indent: 1px;
+}
+
+.manager-sidebar .card-body .card-list > ul > li > .link-default > .limit {
+    --line: 1;
+}
+
+.manager-sidebar .card-body .card-list > ul > li > .link-default > .limit > i {
+    margin-right: 3px;
+    width: 18px;
+}
+
+.manager-sidebar .card-body .card-list > ul > li > .link-default > i {
+    font-size: 1.075em;
+    transition: .3s transform ease-in-out;
+}
+
+.manager-sidebar .card-body .card-list .link-default:hover,
+.manager-sidebar .card-body .card-list > ul > li > .link-default[aria-expanded=true] {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.manager-sidebar .card-body .card-list > ul > li > ul > li > .link-default {
+    padding-left: 37px;
+    border-radius: 30px;
+}
+
+.manager-sidebar .card-body .card-list > ul > li > ul > li > .link-default.active {
+    background-color: rgba(var(--primary-rgb), .075);
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.manager-card + .manager-card {
+    margin-top: 1rem;
+}
+
+.manager-card .manager-form label {
+    color: var(--bs-gray-600);
+}
+
+.manager-card .manager-form .form-control {
+    max-width: 250px;
+    padding-right: 35px;
+    font-size: 1em;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: var(--bs-gray-200) !important;
+}
+
+.manager-card .manager-form .link-default {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 1.15em;
+    z-index: 2;
+    color: var(--bs-gray-500);
+}
+
+.manager-card .manager-form .link-default:hover {
+    color: var(--bs-gray-900);
+}
+
+.manager-table .table {
+    background-color: var(--bs-white);
+    --bs-table-border-color: var(--bs-gray-200);
+    --bs-table-hover-bg: var(--bs-gray-100);
+}
+
+.manager-table thead {
+    background-color: #f3f3f3;
+}
+
+.manager-table thead th {
+    color: var(--bs-gray-700);
+    padding: 12px 10px;
+    position: relative;
+}
+
+.manager-table thead th:first-child {
+    border-right-width: 0;
+}
+
+.manager-table thead th + th {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.manager-table thead th:last-child {
+    border-right-width: 1px;
+}
+
+.manager-table thead th + th:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 1px;
+    left: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--bs-gray-300);
+}
+
+.manager-table tbody td {
+    padding: 12px 10px;
+    color: #4c5257;
+    font-size: .925em;
+    transition: var(--transition-default);
+}
+
+.manager-table tbody td:first-child {
+    border-right-width: 0;
+}
+
+.manager-table tbody td + td {
+    border-left-width: 0;
+    border-right-width: 0;
+}
+
+.manager-table tbody td:last-child {
+    border-right-width: 1px;
+}
+
+.manager-table .table-server .server-image img {
+    height: 35px;
+    width: 35px;
+}
+
+.manager-table .table-server .server-image .service-ribbon {
+    position: absolute;
+    top: -7px;
+    right: -7px;
+    z-index: 2;
+    font-size: 1.15em;
+}
+
+.manager-table .table-server .server-image .service-ribbon.ribbon-danger {
+    color: var(--bs-danger);
+}
+
+.manager-table .table-server .server-image .service-ribbon.ribbon-success {
+    color: var(--bs-success);
+}
+
+.manager-table .table-server .server-image .service-ribbon.ribbon-warning {
+    color: var(--bs-warning);
+}
+
+.manager-table .table-server .server-content .server-sub {
+    color: var(--bs-blue);
+    font-size: .925em;
+}
+
+.manager-table .table-server .server-content .server-sub:hover {
+    color: var(--primary-color);
+}
+
+.manager-table .table-server .server-content .server-title {
+    font-size: 1.225em;
+    font-weight: 500;
+    color: var(--bs-black);
+}
+
+.manager-table .table-server .server-content .service-text .link-default {
+    width: 16px;
+    height: 16px;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    outline: none;
+    position: relative;
+    top: -1px;
+}
+
+.manager-table .table-server .server-content .service-text .link-default svg {
+    height: inherit;
+    width: inherit;
+    fill: #4c5257;
+    transition: var(--transition-default);
+}
+
+.manager-table .table-server .server-content .service-text .link-default:hover svg {
+    fill: var(--bs-gray-900);
+}
+
+.manager-table .server-icon {
+    position: relative;
+    top: 1px;
+    font-size: 1.075em;
+}
+
+.manager-table .service-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 10px;
+}
+
+.manager-table .service-label.label-primary {
+    color: var(--bs-white);
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-size: .85em;
+}
+
+.manager-table .service-label.label-success {
+    color: var(--bs-white);
+    background-color: var(--bs-success);
+    border-radius: 4px;
+    font-size: .85em;
+}
+
+.manager-table .service-label.label-danger {
+    color: var(--bs-white);
+    background-color: var(--bs-danger);
+    border-radius: 4px;
+    font-size: .85em;
+}
+
+.manager-table .service-switch {
+    display: inline-flex;
+    position: relative;
+    vertical-align: top;
+    width: 55px;
+    height: 24px;
+    border-radius: 18px;
+    margin-bottom: 0;
+}
+
+.manager-table .service-switch .switch-input {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.manager-table .service-switch .switch-label {
+    position: relative;
+    display: block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: #c5c3c3;
+    font-size: .925em;
+    cursor: pointer;
+    -webkit-transition: 0.15s all ease-out;
+    -moz-transition: 0.15s all ease-out;
+    -ms-transition: 0.15s all ease-out;
+    -o-transition: 0.15s all ease-out;
+    transition: 0.15s all ease-out;
+}
+
+
+.manager-table .service-switch .switch-label:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5em;
+    line-height: 1.1;
+    content: attr(data-off);
+    right: 12px;
+    opacity: 1;
+    color: var(--bs-white);
+    -webkit-transition: 0.15s all ease-out;
+    -moz-transition: 0.15s all ease-out;
+    -ms-transition: 0.15s all ease-out;
+    -o-transition: 0.15s all ease-out;
+    transition: 0.15s all ease-out;
+}
+
+.manager-table .service-switch .switch-label:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5em;
+    line-height: 1.1;
+    content: attr(data-on);
+    left: 11px;
+    opacity: 0;
+    color: var(--bs-white);
+    -webkit-transition: 0.15s all ease-out;
+    -moz-transition: 0.15s all ease-out;
+    -ms-transition: 0.15s all ease-out;
+    -o-transition: 0.15s all ease-out;
+    transition: 0.15s all ease-out;
+}
+
+.manager-table .service-switch .switch-handle {
+    border-radius: 50%;
+    background-color: var(--bs-white);
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.15s all ease-out;
+    -moz-transition: 0.15s all ease-out;
+    -ms-transition: 0.15s all ease-out;
+    -o-transition: 0.15s all ease-out;
+    transition: 0.15s all ease-out;
+    cursor: pointer;
+}
+
+.manager-table .service-switch .switch-label:active ~ .switch-handle {
+    width: 20px;
+}
+
+.manager-table .service-switch .switch-input:checked ~ .switch-label {
+    background-color: var(--primary-color);
+}
+
+.manager-table .service-switch .switch-input:checked ~ .switch-label:before {
+    opacity: 0;
+}
+
+.manager-table .service-switch .switch-input:checked ~ .switch-label:after {
+    opacity: 1;
+}
+
+.manager-table .service-switch .switch-input:checked ~ .switch-handle {
+    left: unset;
+    right: 5px;
+}
+
+.manager-table .service-actions .action-item {
+    position: relative;
+}
+
+.manager-table .service-actions .action-item .link-default {
+    padding: 8px;
+    font-size: 1em;
+    border: 1px solid var(--bs-gray-200);
+    display: flex;
+    align-items: inherit;
+    justify-content: inherit;
+    color: var(--bs-gray-700);
+    border-radius: 6px;
+    background-color: var(--bs-white);
+}
+
+.manager-table .service-actions .action-item .link-default:hover {
+    color: var(--bs-black);
+    background-color: var(--bs-gray-100);
+}
+
+.manager-table .service-actions .action-item > ul {
+    background-color: var(--bs-white);
+    min-width: 150px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+    -webkit-transition: var(--transition-default);
+    -o-transition: var(--transition-default);
+    transition: var(--transition-default);
+    top: calc(100% + 5px);
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    border-radius: 4px;
+    display: none;
+}
+
+
+.manager-table .service-actions .action-item > ul:before {
+    position: absolute;
+    content: "";
+    height: 5px;
+    top: -5px;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.manager-table .service-actions .action-item.is-dropdown > ul {
+    display: block;
+}
+
+.manager-table .service-actions .action-item > ul > li > a {
+    padding: 8px 12px;
+    color: inherit;
+}
+
+.manager-table .service-actions .action-item > ul > li > a:hover {
+    color: var(--primary-color);
+    background: #f4f4f4;;
+}
+
 @-webkit-keyframes shake {
     0% {
         -webkit-transform: translateX(0px);
@@ -2734,6 +3155,18 @@
 
     .card-price .card-body ul > li + li {
         margin-top: 7px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .manager-table thead th,
+    .manager-table tbody td {
+        min-width: 150px;
+    }
+
+    .manager-table tbody td:first-child {
+        min-width: 250px;
+        white-space: nowrap;
     }
 }
 
@@ -3386,6 +3819,148 @@
         border-bottom-color: var(--primary-color);
         font-size: 1.225em;
     }
+
+    .manager-card .card-header {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .manager-card .card-header .button-sidebar {
+        padding: 3.5px 8px;
+        border-radius: 6px;
+        background-color: var(--bs-gray-100);
+        border: 1px solid var(--bs-gray-200);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        font-size: .925em;
+    }
+
+    .manager-card .card-header .button-sidebar .button-sidebar_icon {
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        border: 0;
+        background: transparent;
+        border-radius: 0;
+        width: 26px;
+        height: 26px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .manager-card .card-header .button-sidebar .button-sidebar_icon > span {
+        display: block;
+        position: absolute;
+        height: 1px;
+        background: var(--bs-gray-800);
+        border-radius: 9px;
+        opacity: 1;
+        left: 4px;
+        right: 4px;
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .manager-card .card-header .button-sidebar .button-sidebar_icon > span:nth-child(1) {
+        top: 6px;
+    }
+
+    .manager-card .card-header .button-sidebar .button-sidebar_icon > span:nth-child(2), .manager-card .card-header .button-sidebar .button-sidebar_icon > span:nth-child(3) {
+        top: 12px;
+    }
+
+    .manager-card .card-header .button-sidebar .button-sidebar_icon > span:nth-child(4) {
+        top: 18px;
+    }
+
+    .is-sidebar .manager-card .card-header .button-sidebar .button-sidebar_icon > span:nth-child(2) {
+        -webkit-transform: rotate(45deg) scale(.9);
+        -ms-transform: rotate(45deg) scale(.9);
+        transform: rotate(45deg) scale(.9);
+    }
+
+    .is-sidebar .manager-card .card-header .button-sidebar .button-sidebar_icon > span:nth-child(3) {
+        -webkit-transform: rotate(-45deg) scale(.9);
+        -ms-transform: rotate(-45deg) scale(.9);
+        transform: rotate(-45deg) scale(.9);
+    }
+
+    .is-sidebar .manager-card .card-header .button-sidebar .button-sidebar_icon > span:nth-child(1),
+    .is-sidebar .manager-card .card-header .button-sidebar .button-sidebar_icon > span:nth-child(4) {
+        top: 17.5px;
+        width: 0;
+        left: 50%;
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+    }
+
+    .manager-sidebar {
+        position: fixed;
+        top: 0;
+        width: 90%;
+        max-width: 320px;
+        background-color: var(--bs-white);
+        height: 100vh;
+        overflow-y: auto;
+        z-index: 13;
+        -webkit-transition: var(--transition-default);
+        -o-transition: var(--transition-default);
+        transition: var(--transition-default);
+        border-radius: 0;
+        left: -150%;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .manager-overlay {
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 12;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .is-sidebar {
+        overflow: hidden !important;
+        height: 100vh !important;
+    }
+
+    .is-sidebar .manager-sidebar {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .is-sidebar .manager-overlay {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -3406,7 +3981,6 @@
         -ms-flex-order: 2;
         order: 2;
     }
-
 
     .card-table_domain .card-body .card-item {
         -webkit-box-orient: vertical;
