@@ -486,6 +486,16 @@
 	border-color: var(--secondary-color);
 }
 
+.button-theme_success {
+	background: var(--bs-success);
+	border-color: var(--bs-success);
+}
+
+.button-theme_danger {
+	background: var(--bs-danger);
+	border-color: var(--bs-danger);
+}
+
 .button-theme::after {
 	position: absolute;
 	content: "";
@@ -1840,6 +1850,12 @@
 	min-height: 42px;
 }
 
+.contact-form .form-control:focus {
+	border-color: var(--bs-gray-500) !important;
+	box-shadow: none !important;
+	outline: none !important;
+}
+
 .contact-form .form-control::-webkit-input-placeholder {
 	opacity: .8;
 }
@@ -2375,10 +2391,6 @@
 }
 
 .card-table_price .card-header .card-value {
-	/*background: rgba(var(--primary-rgb), .05);
-	border-top: 1px solid rgba(var(--primary-rgb), .1);
-	border-bottom: 1px solid rgba(var(--primary-rgb), .1);
-	color: var(--bs-gray-600);*/
 	background: var(--secondary-color);
 	margin-top: 25px;
 	color: var(--bs-white);
@@ -2653,7 +2665,7 @@
 	padding: 10px;
 }
 
-.manager-sidebar .card-header {
+.manager-card .card-header {
 	padding: 10px 15px;
 	border-bottom: 1px solid var(--bs-gray-200) !important;
 }
@@ -2666,7 +2678,7 @@
 }
 
 .manager-card .card-header .card-title {
-	font-size: 1.225em;
+	font-size: 1.15em;
 	font-weight: 700;
 	color: var(--bs-black);
 }
@@ -2731,8 +2743,26 @@
 	font-weight: 700;
 }
 
-.manager-card + .manager-card {
+.manager-card + .manager-card,
+.manager-card + .manager-alert {
 	margin-top: 1rem;
+}
+
+.manager-alert {
+	padding: 10px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.manager-alert .manager-alert_title {
+	margin-bottom: 3px;
+	font-size: 1.3em;
+	color: inherit;
+	font-weight: 700;
+}
+
+.manager-alert .manager-alert_text {
+	color: inherit;
+	font-size: 1em;
 }
 
 .manager-card .manager-form label {
@@ -2746,6 +2776,10 @@
 	outline: none !important;
 	box-shadow: none !important;
 	border-color: var(--bs-gray-200) !important;
+}
+
+.manager-card .manager-form .form-control:focus {
+	border-color: var(--bs-gray-400) !important;
 }
 
 .manager-card .manager-form .link-default {
@@ -2784,20 +2818,20 @@
 	position: relative;
 }
 
-.manager-table thead th:first-child {
+.manager-table .table:not(.table-bordered) thead th:first-child {
 	border-right-width: 0;
 }
 
-.manager-table thead th + th {
+.manager-table .table:not(.table-bordered) thead th + th {
 	border-left-width: 0;
 	border-right-width: 0;
 }
 
-.manager-table thead th:last-child {
+.manager-table .table:not(.table-bordered) thead th:last-child {
 	border-right-width: 1px;
 }
 
-.manager-table thead th + th:before {
+.manager-table .table:not(.table-bordered) thead th + th:before {
 	position: absolute;
 	content: "";
 	height: 26px;
@@ -2808,24 +2842,44 @@
 	background-color: var(--bs-gray-300);
 }
 
+.manager-table .table .column-100 {
+	min-width: 100px;
+}
+
 .manager-table tbody td {
 	padding: 12px 10px;
 	color: #4c5257;
-	font-size: .925em;
 	transition: var(--transition-default);
+	font-size: 1em;
 }
 
-.manager-table tbody td:first-child {
+.manager-table .table:not(.table-bordered) tbody td {
+	font-size: .925em;
+}
+
+.manager-table .table:not(.table-bordered) tbody td:first-child {
 	border-right-width: 0;
 }
 
-.manager-table tbody td + td {
+.manager-table .table:not(.table-bordered) tbody td + td {
 	border-left-width: 0;
 	border-right-width: 0;
 }
 
-.manager-table tbody td:last-child {
+.manager-table .table:not(.table-bordered) tbody td:last-child {
 	border-right-width: 1px;
+}
+
+.manager-table .table tbody td .form-control {
+	font-size: 1em;
+	height: 34px;
+	outline: none !important;
+	box-shadow: none !important;
+	border-color: var(--bs-gray-200) !important;
+}
+
+.manager-card .table tbody td .form-control:focus {
+	border-color: var(--bs-gray-400) !important;
 }
 
 .manager-table .table-server .server-image img {
@@ -3033,13 +3087,21 @@
 	position: relative;
 }
 
+.manager-table .service-actions .action-item .button-theme {
+	border-radius: 4px;
+	padding: 4px 12px;
+	font-size: .925em;
+	font-weight: 400;
+	height: 34px;
+}
+
 .manager-table .service-actions .action-item .link-default {
 	padding: 8px;
 	font-size: 1em;
 	border: 1px solid var(--bs-gray-200);
 	display: flex;
-	align-items: inherit;
-	justify-content: inherit;
+	align-items: center;
+	justify-content: center;
 	color: var(--bs-gray-700);
 	border-radius: 6px;
 	background-color: var(--bs-white);
@@ -3089,6 +3151,21 @@
 .manager-table .service-actions .action-item > ul > li > a:hover {
 	color: var(--primary-color);
 	background: #f4f4f4;;
+}
+
+.manager-dns {
+	padding: 30px 0;
+}
+
+.manager-dns .form-item .form-item_input .form-control {
+	font-size: 1.075em;
+	min-height: 42px;
+}
+
+.manager-dns .form-item .form-item_input .form-control:focus {
+	border-color: var(--bs-gray-500) !important;
+	box-shadow: none !important;
+	outline: none !important;
 }
 
 @-webkit-keyframes shake {
@@ -3195,7 +3272,7 @@
 		min-width: 150px;
 	}
 
-	.manager-table tbody td:first-child {
+	.manager-table .table:not(.table-bordered) tbody td:first-child {
 		min-width: 250px;
 		white-space: nowrap;
 	}
@@ -3871,6 +3948,10 @@
 		font-size: .925em;
 	}
 
+	.manager-card .card-header .button-sidebar .button-sidebar_text {
+		color: var(--bs-gray-800);
+	}
+
 	.manager-card .card-header .button-sidebar .button-sidebar_icon {
 		position: relative;
 		-webkit-box-orient: vertical;
@@ -3967,7 +4048,7 @@
 		box-shadow: none;
 	}
 
-	.manager-sidebar .manager-card .card-header{
+	.manager-sidebar .manager-card .card-header {
 		align-items: flex-start;
 	}
 
