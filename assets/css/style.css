@@ -496,6 +496,11 @@
 	border-color: var(--bs-danger);
 }
 
+.button-theme_default {
+	background: var(--bs-secondary);
+	border-color: var(--bs-secondary);
+}
+
 .button-theme::after {
 	position: absolute;
 	content: "";
@@ -3154,7 +3159,7 @@
 }
 
 .manager-dns {
-	padding: 30px 0;
+	padding: 30px;
 }
 
 .manager-dns .form-item .form-item_input .form-control {
