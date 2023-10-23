@@ -3963,6 +3963,18 @@
 		pointer-events: none;
 	}
 
+	.manager-sidebar .manager-card {
+		box-shadow: none;
+	}
+
+	.manager-sidebar .manager-card .card-header{
+		align-items: flex-start;
+	}
+
+	.manager-card + .manager-card {
+		border-top: 1px solid var(--bs-gray-200) !important;
+	}
+
 	.manager-overlay {
 		background: rgba(0, 0, 0, 0.5);
 		position: fixed;
