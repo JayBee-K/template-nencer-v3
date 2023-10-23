@@ -2762,6 +2762,12 @@
 	color: var(--bs-gray-900);
 }
 
+.manager-card .card-body .section-pagination {
+	padding-top: 16px;
+	padding-bottom: 8px;
+	margin-top: 0;
+}
+
 .manager-table .table {
 	background-color: var(--bs-white);
 	--bs-table-border-color: var(--bs-gray-200);
