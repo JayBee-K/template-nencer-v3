@@ -131,6 +131,29 @@ input[type='number'] {
     -moz-appearance: textfield;
 }
 
+.form-mobile input[type=date]::-webkit-inner-spin-button,
+.form-mobile input[type=date]::-webkit-calendar-picker-indicator,
+.form-mobile input[type=datetime-local]::-webkit-inner-spin-button,
+.form-mobile input[type=datetime-local]::-webkit-calendar-picker-indicator,
+.form-mobile input[type=month]::-webkit-inner-spin-button,
+.form-mobile input[type=month]::-webkit-calendar-picker-indicator,
+.form-mobile input[type=time]::-webkit-inner-spin-button,
+.form-mobile input[type=time]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.form-mobile > span:before {
+    position: absolute;
+    content: "\f073";
+    font-family: "Font Awesome 5 Pro";
+    font-size: var(--size-theme);
+    color: var(--bs-gray-700);
+    top: 50%;
+    right: 0.75rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
 .zi--1 {
     z-index: -1;
 }
@@ -276,4 +299,20 @@ input[type='number'] {
 
 .fz-24 {
     font-size: 1.75em;
+}
+
+.mw-25px {
+    min-width: 25px !important;
+}
+
+.mw-50px {
+    min-width: 50px !important;
+}
+
+.mw-75px {
+    min-width: 75px !important;
+}
+
+.mw-100px {
+    min-width: 100px !important;
 }
