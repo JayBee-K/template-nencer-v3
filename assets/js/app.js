@@ -246,6 +246,22 @@ let handleCheckInTable = function (){
     });
 }
 
+const handleViewPass = function () {
+	$(document).on('click', '.buttonViewPassword', function () {
+		let elm = $(this),
+			elmID = elm.attr('data-id');
+		if (elm.hasClass('is-show')) {
+			elm.html('<i class="fal fa-eye">');
+			elm.removeClass('is-show');
+			$('#' + elmID).attr('type', 'password');
+		} else {
+			elm.html('<i class="fal fa-eye-slash">');
+			elm.addClass('is-show');
+			$('#' + elmID).attr('type', 'text');
+		}
+	});
+}
+
 $(function () {
     handleApplyCollapse($('#header-navigation > ul'), true, true);
     handleCallMenu();
@@ -392,4 +408,5 @@ $(function () {
     handleDropdownInTable();
     handleCallSidebar();
     handleCheckInTable();
+    handleViewPass();
 });
