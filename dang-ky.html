@@ -458,10 +458,96 @@
 	<div class="section-gap section-login">
 		<div class="container">
 			<div class="row g-4 justify-content-center">
-				<div class="col-lg-10 col-xl-8">
+				<div class="col-12">
 					<div class="login-wrapper">
 						<div class="row g-0 flex-lg-row flex-column-reverse">
-							<div class="col-lg-6">
+							<div class="col-lg-7 col-xl-6">
+								<div class="login-inner">
+									<div class="section-heading mb-4 text-lg-start">
+										<div class="heading-title mb-0">
+											Đăng ký tài khoản
+										</div>
+									</div>
+									<form action="" class="login-form">
+										<div class="row g-4">
+											<div class="col-md-12">
+												<label for="" class="fw-bold mb-2 fz-15">
+													<i class="fal fa-user-alt"></i> Tên đăng nhập <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item">
+													<input type="text" class="form-control ps-3"
+													       placeholder="Nhập tên đăng nhập">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="" class="fw-bold mb-2 fz-15">
+													<i class="fal fa-lock-alt"></i> Mật khẩu đăng nhập <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item login-form_icon">
+													<input type="password" class="form-control ps-3"
+													       id="password"
+													       placeholder="Mật khẩu đăng nhập">
+													<button type="button"
+													        data-id="password"
+													        class="login-form_view link-default buttonViewPassword">
+														<i class="fal fa-eye"></i>
+													</button>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="" class="fw-bold mb-2 fz-15">
+													<i class="fal fa-lock-alt"></i> Nhập lại mật khẩu <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item login-form_icon">
+													<input type="password" class="form-control ps-3"
+													       id="password-re"
+													       placeholder="Nhập lại mật khẩu">
+													<button type="button"
+													        data-id="password-re"
+													        class="login-form_view link-default buttonViewPassword">
+														<i class="fal fa-eye"></i>
+													</button>
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="" class="fw-bold mb-2 fz-15">
+													<i class="fal fa-id-card"></i> Họ và tên <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item">
+													<input type="text" class="form-control ps-3"
+													       placeholder="Nhập họ và tên">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<label for="" class="fw-bold mb-2 fz-15">
+													<i class="fal fa-phone-alt"></i> SĐT hoặc Email <span
+														class="text-danger fw-bold">*</span>
+												</label>
+												<div class="login-form_item">
+													<input type="text" class="form-control ps-3"
+													       placeholder="Nhập sđt hoặc email">
+												</div>
+											</div>
+											<div class="col-12 mt-5 text-center">
+												<button type="submit"
+												        class="button-theme button-theme_primary button-theme_large rounded-2 w-100">
+													ĐĂNG KÝ <i class="fas fa-sign-in-alt ms-1"></i>
+												</button>
+											</div>
+											<div class="col-12 text-center">
+												<div class="fz-14">
+													Bạn đã có tài khoản? <a href="">Đăng nhập</a>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-5 col-xl-6">
 								<div class="login-image" style="background-image: url('./assets/images/bg-login.png')">
 									<img src="./assets/images/img-login.png" class="img-fluid" alt="">
 									<div class="login-protected">
@@ -477,67 +563,6 @@
 											</div>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="col-lg-6">
-								<div class="login-inner">
-									<div class="section-heading mb-4 text-lg-start">
-										<div class="heading-title mb-0">
-											Đăng nhập tài khoản
-										</div>
-										<div class="heading-description">
-											To experience better service
-										</div>
-									</div>
-									<form action="" class="login-form">
-										<div class="row g-4">
-											<div class="col-12">
-												<label for="" class="login-form_item">
-													<i class="fal fa-user-alt"></i>
-													<input type="text" class="form-control"
-													       placeholder="Email hoặc Số điện thoại">
-												</label>
-											</div>
-											<div class="col-12">
-												<label for="" class="login-form_item login-form_icon">
-													<i class="fal fa-lock-alt"></i>
-													<input type="password" class="form-control"
-													       id="password"
-													       placeholder="Mật khẩu đăng nhập">
-													<button type="button"
-													        data-id="password"
-													        class="login-form_view link-default buttonViewPassword">
-														<i class="fal fa-eye"></i>
-													</button>
-												</label>
-											</div>
-											<div class="col-12">
-												<div class="hstack justify-content-between gap-10px">
-													<div class="form-check">
-														<input class="form-check-input" type="checkbox" value=""
-														       id="rememberLogin" required>
-														<label class="form-check-label" for="rememberLogin">
-															Ghi nhớ?
-														</label>
-													</div>
-													<a href="">
-														Quên mật khẩu?
-													</a>
-												</div>
-											</div>
-											<div class="col-12 mt-5 text-center">
-												<button type="submit"
-												        class="button-theme button-theme_primary button-theme_large rounded-2 w-100">
-													ĐĂNG NHẬP <i class="fas fa-sign-in-alt ms-1"></i>
-												</button>
-											</div>
-											<div class="col-12 text-center">
-												<div class="fz-14">
-													Bạn chưa có tài khoản? <a href="">Đăng ký</a>
-												</div>
-											</div>
-										</div>
-									</form>
 								</div>
 							</div>
 						</div>
