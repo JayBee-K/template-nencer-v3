@@ -2903,7 +2903,7 @@
 }
 
 .manager-table thead th {
-	color: var(--bs-gray-700);
+	color: var(--bs-gray-900);
 	padding: 12px 10px;
 	position: relative;
 }
@@ -2939,17 +2939,17 @@
 	background-color: var(--bs-gray-300);
 }
 
-.manager-table .table .column-100 {
-	min-width: 100px;
-}
-
 .manager-table tbody td {
 	padding: 12px 10px;
-	color: #4c5257;
+	color: var(--bs-gray-900);
 	-webkit-transition: var(--transition-default);
 	-o-transition: var(--transition-default);
 	transition: var(--transition-default);
 	font-size: 1em;
+}
+
+.manager-table tbody .column-image {
+	width: 200px;
 }
 
 .manager-table .table:not(.table-bordered) tbody td {
@@ -3023,7 +3023,7 @@
 	color: var(--bs-black);
 }
 
-.manager-table .table-server .server-content .service-text .link-default {
+.manager-table .button-copy {
 	width: 16px;
 	height: 16px;
 	border: 0;
@@ -3034,7 +3034,7 @@
 	top: -1px;
 }
 
-.manager-table .table-server .server-content .service-text .link-default svg {
+.manager-table .button-copy svg {
 	height: inherit;
 	width: inherit;
 	fill: #4c5257;
@@ -3043,7 +3043,7 @@
 	transition: var(--transition-default);
 }
 
-.manager-table .table-server .server-content .service-text .link-default:hover svg {
+.manager-table .button-copy:hover svg {
 	fill: var(--bs-gray-900);
 }
 
@@ -4429,6 +4429,10 @@
 
 	.login-wrapper .login-image .login-protected .protected-content .protected-title{
 		font-size:  1.075em;
+	}
+
+	.manager-table tbody .column-image {
+		width: 185px;
 	}
 }
 
