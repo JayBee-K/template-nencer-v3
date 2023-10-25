@@ -2786,6 +2786,26 @@
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
+.manager-alert.alert-dismissible {
+	padding-right: 2rem;
+}
+
+.manager-alert.alert-dismissible.alert-dismissible_start {
+	padding-left: 2rem;
+	padding-right: 10px;
+}
+
+.manager-alert.alert-dismissible .btn-close {
+	padding: 10px;
+	top: 4px;
+	background-size: 1em;
+}
+
+.manager-alert.alert-dismissible.alert-dismissible_start .btn-close {
+	right: unset;
+	left: 0;
+}
+
 .manager-alert .manager-alert_title {
 	margin-bottom: 3px;
 	font-size: 1.3em;
