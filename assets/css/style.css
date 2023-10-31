@@ -1687,7 +1687,6 @@
 	transform: scale(1.1);
 }
 
-
 .sidebar-article .sidebar-item .article-item + .article-item {
 	padding-top: 15px;
 	margin-top: 15px;
@@ -1717,7 +1716,7 @@
 .article-detail .article-content ul,
 .article-detail .article-content ol,
 .article-detail .article-content blockquote {
-	margin-bottom: 30px;
+	margin-bottom: 16px;
 }
 
 .article-detail .article-content ul,
@@ -3681,9 +3680,6 @@
 
 	.header .header-navigation > ul > li {
 		border-bottom: 1px solid var(--bs-gray-200);
-	}
-
-	.header .header-navigation > ul > li {
 		width: 100%;
 	}
 
