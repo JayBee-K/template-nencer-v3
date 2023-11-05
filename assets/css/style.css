@@ -3088,6 +3088,12 @@
     font-size: .85em;
 }
 
+.manager-table .service-label.label-secondary {
+    color: var(--bs-white);
+    background-color: var(--bs-secondary);
+}
+
+
 .manager-table .service-label.label-primary {
     color: var(--bs-white);
     background-color: var(--primary-color);
