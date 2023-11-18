@@ -1735,20 +1735,35 @@
 	font-weight: 700;
 }
 
+.article-detail .article-content h1 b,
+.article-detail .article-content h1 strong,
+.article-detail .article-content h2 b,
+.article-detail .article-content h2 strong,
+.article-detail .article-content h3 b,
+.article-detail .article-content h3 strong,
+.article-detail .article-content h4 b,
+.article-detail .article-content h4 strong,
+.article-detail .article-content h5 b,
+.article-detail .article-content h5 strong,
+.article-detail .article-content h6 b,
+.article-detail .article-content h6 strong {
+	font-weight: 700;
+}
+
 .article-detail .article-content h2 {
-	font-size: 1.6em;
+	font-size: 1.375em;
 }
 
 .article-detail .article-content h3 {
-	font-size: 1.45em;
+	font-size: 1.225em;
 }
 
 .article-detail .article-content h4 {
-	font-size: 1.3em;
+	font-size: 1.15em;
 }
 
 .article-detail .article-content h5 {
-	font-size: 1.15em;
+	font-size: 1.075em;
 }
 
 .article-detail .article-content h6 {
@@ -4105,26 +4120,6 @@
 
 	.article-detail .article-content {
 		font-size: 1.075em;
-	}
-
-	.article-detail .article-content h2 {
-		font-size: 1.3em;
-	}
-
-	.article-detail .article-content h3 {
-		font-size: 1.225em;
-	}
-
-	.article-detail .article-content h4 {
-		font-size: 1.15em;
-	}
-
-	.article-detail .article-content h5 {
-		font-size: 1.075em;
-	}
-
-	.article-detail .article-content h6 {
-		font-size: 1em;
 	}
 
 	.contact-list .contact-item .contact-heading .contact-heading_title {
